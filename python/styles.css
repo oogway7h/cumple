@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: crimson;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #c84c4c;
+    margin: 0;
+}
+
+.photo-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.photo-container {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+}
+
+.photo-container img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.photo-container p {
+    margin: 10px 0 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Ajustes responsivos para dispositivos pequeños */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .photo-container {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+
+    .contenedor {
+        width: 90%; /* Ajusta el contenedor al 90% de la pantalla */
+        height: auto; /* Ajusta la altura de forma dinámica */
+        margin: 20px auto; /* Centra el contenedor verticalmente */
+        padding: 10px; /* Reduce el espacio interno en dispositivos pequeños */
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .photo-container {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .contenedor {
+        padding: 5px; /* Ajusta el espacio interno para pantallas más pequeñas */
+    }
+
+    .column-paragraph {
+        padding-top: 10px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .column-paragraph {
+            max-width: 300px;
+            padding-top: 20px;
+            margin: 0 auto;
+            text-align: justify;
+           
+        }
+
+        .play-button {
+            color: blue; 
+            text-decoration: underline; 
+            cursor: pointer; 
+        }
+
+        .play-button:hover {
+            color: darkblue; 
+        }
+        .contenedor {
+            width: 250px; 
+            height: 350px; 
+            background-color: rgb(206, 207, 134); 
+            border: 3px solid rgb(118, 66, 82); 
+            position: absolute; 
+            top: 300px; 
+            left: 610px; 
+            padding-block-start: 1%;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" href="styles.css">
+    <audio id="music" src="sources/music.mp3"></audio>
+
+    <script>
+        // Función para reproducir música
+        function playMusic() {
+            const music = document.getElementById('music');
+            music.play(); // Reproduce el audio
+        }
+    </script>
+    <div class="container">
+        <header class="header">
+            <h1>FELIZ CUMPLEAÑOS MI AMOR</h1>
+        </header>
+        <p class="column-paragraph">
+            Hola MIIIIII AMORRRR es la primera vez que no me quedo contigo hasta las 12 para cantarte pero al menos queria hacer algo bonito por aqui
+            pero igual puede escuchar las mañanitas dando <span class="play-button" onclick="playMusic()">click aquí</span>
+        </p>
+        <div class="contenedor">
+            <p>
+                Solo quiero decirte que desde que llegaste a mi vida sos lo mas bonito que tengo, te adooooro con todo mi corazon y espero que pases un cimpleaños muuuuy feliz que nuca se te olvide que aunque pelemos yo siempre voy a quere estar contigo, sos una persona muuy inteligente 
+                admirable y resiliente por eso y por muchas cositas más TE AMO MI VIDA
+            </p>
+        </div>
+        <section class="photo-section">
+            <div class="photo-container">
+                <img src="sources/beau.jpg" alt="Foto 1">
+                <p>Mi novia la mas hermosa</p>
+            </div>
+            <div class="photo-container">
+                <img src="sources/sendigks.jpg" alt="Foto 2">
+                <p>Nosotros mandando besitos</p>
+            </div>
+            
+            <div class="photo-container">
+                <img src="sources/beso.jpg" alt="Foto 3">
+                <p>Nosotros dandonos besitos jiji</p>
+            </div>
+            <div class="video-container">
+                <video controls width="350" height="500">
+                    <source src="sources/video.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento <code>video</code>.
+                </video>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
